@@ -39,7 +39,7 @@ angular.module('chartjs-directive', []).
           if(scope.chartInstance)
             scope.chartInstance.destroy();
           scope.chartInstance = chart[chartType](scope.chartObject.data, scope.chartObject.options);
-        });
+        }, true);
       }
     }
   });
